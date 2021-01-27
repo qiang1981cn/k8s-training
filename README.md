@@ -108,7 +108,7 @@ watch kubectl get pods
 
 ```
 kubectl apply -f 07-configmap/
-watch kubectl get pods
+kubectl get pods -w
 ```
 
 ## Install Rancher
