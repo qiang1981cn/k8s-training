@@ -79,7 +79,7 @@ Go to ingress
 
 ```
 kubectl apply -f 05-deployment-update/
-watch kubectl get pods
+kubectl get pods -w
 ```
 
 ## Configure resources and health checks
@@ -92,7 +92,7 @@ kubectl top pods
 
 ```
 kubectl apply -f 06-deployment-advanced-features/
-watch kubectl get pods
+kubectl get pods -w
 ```
 
 Describe not ready pod
@@ -101,7 +101,7 @@ Fix health check
 
 ```
 kubectl apply -f 06-deployment-advanced-features/
-watch kubectl get pods
+kubectl get pods -w
 ```
 
 ## Add configmap
