@@ -20,4 +20,4 @@ helm upgrade --install rancher rancher-latest/rancher \
   --version 2.5.5 \
   --set hostname=rancher.${IP0}.xip.io --create-namespace
 
-watch kubectl get pods,certificate,ingress -A
+kubectl get pods,certificate,ingress -A -w
